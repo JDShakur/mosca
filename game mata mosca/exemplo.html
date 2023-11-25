@@ -1,0 +1,26 @@
+<body>
+    <h1>Objeto dom</h1>
+    <h2>Método setinterval (function, milessegundos;n Parâmetros)</h2>
+    <p id="result"></p>
+    <button onclick="stop()"></button>
+
+    <script>
+        let i = 60;
+        const time =document.getelementById("result");
+        const myTimer = setInterval(function(){i--; timer.innerHTML = i},1000);
+        function stop() {
+            clearInterval(myTimer);
+        }
+    </script>
+</body>
+<script>
+    //Criando um novo elemento de parágrafo <p>
+    var novoParagrafo = document.createElement("h1");
+
+    //Definindo o texto dentro do parágrafo
+    novoParagrafo.textContent = "Este é um novo parágrafo criado dinamicamente.";
+
+    //Adicionando o novo parággrafo ao documento
+    document.body.appendChild(novoParagrafo);
+
+</script>

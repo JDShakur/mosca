@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Mata-Moscas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/game.js"></script>
+</head>
+<body onresize="atualizaTela()">
+    <!-- <img class="mosquito" src="img/mosquito.png" alt="imagem cartunizada de um mosquito irritante"> -->
+    
+    <div class="painel">
+        <div class="life">
+            <img id="v1" src="./img/coracao_cheio.png">
+            <img id="v2" src="./img/coracao_cheio.png">
+            <img id="v3" src="./img/coracao_cheio.png">
+            <div class="timer">
+                tempo restante: 00:00
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setInterval(function() {
+        positionRandom();},1000)
+    </script>
+</body>
+</html>
